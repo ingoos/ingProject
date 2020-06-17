@@ -182,7 +182,20 @@ a{text-decoration:none;}
     position:absolute;
     top:50px;
     left:255px;
-    padding:15px;
+    width:100%;
+}
+
+.main-container{
+    max-width:1278px;
+    display:flex;
+    justify-content:flex-start;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.main-container > .main_title{
+    font-weight:400;
+    padding:23px 32px;
 }
 
 /* utill */
