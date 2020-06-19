@@ -250,6 +250,18 @@ a{text-decoration:none;}
     border-bottom: 1px solid rgba(0,0,0,.12);
 }
 
+.search-bar{
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    width: 482px;
+}
+
 /* utill */
 .fs20b{
     font-size:28px;
@@ -266,3 +278,4 @@ a{text-decoration:none;}
 .mb10{margin-bottom:10px;}
 .fw500{font-weight:500;}
 .fw600{font-weight:600;}
+
