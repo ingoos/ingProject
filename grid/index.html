@@ -78,23 +78,25 @@
                         </div>
                         <div class="search-select-area">
                             <input type="checkbox" id="select-checkbox1">
-                            <label for="select-checkbox1">Search Type ▼</label>
+                            <label for="select-checkbox1" id="search-type">Search Type</label>
 
                             <div class="select-content-area">
 
-                                <input type="radio" id="exmaple1" name="test">
-                                <label for="exmaple1">11</label>
+                                <input type="radio" id="exmaple1" value="이름" name="test">
+                                <label for="exmaple1"><span>이름</span></label>
 
-                                <input type="radio" id="exmaple2" name="test">
-                                <label for="exmaple2">22</label>
+                                <input type="radio" id="exmaple2" value="내용" name="test">
+                                <label for="exmaple2"><span>내용</span></label>
 
-                                <input type="radio" id="exmaple3" name="test">
-                                <label for="exmaple3">33</label>
+                                <input type="radio" id="exmaple3" value="날짜" name="test">
+                                <label for="exmaple3"><span>날짜</span></label>
 
-                                <input type="radio" id="exmaple4" name="test">
-                                <label for="exmaple4">44</label>
+                                <input type="radio" id="exmaple4" value="조회수" name="test">
+                                <label for="exmaple4"><span>조회수</span></label>
 
                             </div>
+                            <input type="hidden" name="radio_text" style="display:hidden;">
+                            <input type="text" id="type-something" class="type-something" placeholder="Type something">
                         </div>
                         <div class="search-sild-navi-area">
                             

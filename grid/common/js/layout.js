@@ -11,7 +11,6 @@
      sideWidth = getCurrentSideWidth();
      var MainVisualWidth = document.documentElement.clientWidth;
      main_visual.style.width = MainVisualWidth - sideWidth[0] + "px";
-     //document.querySelector('#main-visual-content').textContent = main_visual.style.width;
  }
 
  function getCurrentSideWidth(){
@@ -32,9 +31,29 @@
 
 
  /* menu icon click Event */
- 
  menu_check_btn.addEventListener('click', function(event){
      side.style.left = -(sideWidth[0])+"px";
      main_visual.style.left = sideWidth[1]+"px";
      displayWindowSize();
  });
+
+
+// radio box to selct box custom
+radioBtn = document.querySelectorAll('input[name=test]+label');
+                                
+[].forEach.call(radioBtn,function(btn){
+    btn.addEventListener('click',function(event){
+        console.log(event.target.innerText);
+        document.querySelector('input[name=radio_text]').value= event.target.innerText;
+        document.querySelector('label[id=search-type]').innerHTML= event.target.innerText;
+        document.querySelector('#select-checkbox1').checked = false;
+    },true)
+});
+
+window.addEventListener('click',function(envet){
+    if( document.querySelector('#select-checkbox1').checked == true ){
+        //document.querySelector('#select-checkbox1').checked = false;
+        console.log('test2');
+    }
+    console.log('test');
+},false);
